@@ -206,7 +206,23 @@
 
 // OPERASI TIPE DATA OBJECT
 
+//
+// const person = {};
+// person["nama"] = "Anggi setiawan";
+// person["nim"] = "181011400567";
+// person["alamat"] = "Jl. Pamulang Raya";
+// person["umur"] = 23;
 
+// delete person["alamat"];
+// console.table(person);
 
+// KODE MEMBUAT OBJECT MENGGUNAKAN PROPERTIES
+// const person = {
+//     nama: "Ade Waliya",
+//     "alamat lengkap": "Jl. jombang raya",
+//     umur: 23
+// };
+// mengakses kode object
+// document.writeln(`<b> Halo, ${person.nama} yang ber alamat di ${person["alamat lengkap"]} dan yang berumur ${person.umur} </b>`);
 
-
+// IF EXPRESSION

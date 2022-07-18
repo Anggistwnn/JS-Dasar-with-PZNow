@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="#">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipe Data Object</title>
+</head>
+
+<body>
+
+  <!-- <canvas id="canvas1" width="400" height="300">
+    </canvas> -->
+
+  <!-- <svg width="100" height="100">
+    <line x1="50" y1="0" x2="50" y2="100" style="stroke:black" />
+    <line x1="0" y1="50" x2="100" y2="50" style="stroke:black" />
+  </svg> -->
+
+
+  <script src="script.js">
+
+    // OPERASI TIPE DATA OBJECT
+
+
+    const person = {};
+    person["nama"] = "Anggi setiawan";
+    person["nim"] = "181011400567";
+    person["alamat"] = "Jl. Pamulang Raya";
+    person["umur"] = 23;
+
+    delete person["alamat"];
+    console.table(person);
+
+    // KODE MEMBUAT OBJECT MENGGUNAKAN PROPERTIES
+    const person = {
+      nama: "Ade Waliya",
+      "alamat lengkap": "Jl. jombang raya",
+      umur: 23
+    };
+    // mengakses kode object
+    document.writeln(`<b> Halo, ${person.nama} yang ber alamat di ${person["alamat lengkap"]} dan yang berumur ${person.umur} </b>`);
+
+
+  </script>
+</body>
+
+</html>
