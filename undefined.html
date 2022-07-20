@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //Undefined-variable
+        let name;
+
+        if (name === undefined) {
+            console.info("UNDEFINED");
+        } else {
+            console.info("DEFINEED");
+        };
+        // Undefined-array-value
+        let mhs = ["Anggi", "Ade waliya", "Raihani"];
+
+        if (mhs[2]) {
+            console.info("mhs index ke-2 tidak ada!")
+        } else {
+            console.info(`mhs itu bernama ${mhs[2]}`);
+        }
+        // undefined-tipe-object
+        const universitas = {
+            namaMahasiswa: ["Anggi"]
+        };
+
+        if (universitas.namaMahasiswa === undefined) {
+            console.info("OBJECT UNDIFINED");
+        } else {
+            console.info("OBJECT DIFINED");
+        }
+
+    </script>
+</body>
+
+</html>
