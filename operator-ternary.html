@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Ternary</title>
+</head>
+
+<body>
+    <!-- ternary operator sama dengan if else namun mereka dapat menyederhanakan code yang dilakukan if else -->
+
+    <script>
+        // if else
+        const nilai = prompt("masukan nilai: ")
+
+        let speech;
+        if (nilai >= 75) {
+            speech = "Selamat Anda lulus!";
+        } else {
+            speech = "Terima kasih sudah berjuang, dan sampai bertemu di tahun depan:)";
+        }
+        // ternary
+        document.writeln(`<marquee> ${speech} </marquee>`)
+
+        speech = nilai >= 75 ? "Selamat Anda Lulus!" : "Terima kasih sudah berjuang, dan sampai bertemu di tahun depan:)";
+
+        document.writeln(`<p> ${speech} </p>`)
+
+
+    </script>
+</body>
+
+</html>

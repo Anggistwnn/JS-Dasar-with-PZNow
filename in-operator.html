@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+
+<body>
+    <!-- in operator akan menganggap undefined atau null sebagai true -->
+
+    <script>
+
+        const mantan = {
+            firstName: "Ade",
+            lastName: "Waliya"
+        };
+
+        if ("firstName" in mantan) {
+            alert(` Hello ${mantan.firstName}`)
+        } else {
+            alert("Bisa gausah hubungin gua gak?")
+        }
+
+        const mbaCrush = {
+            firstName: "Vanessya",
+            middleName: undefined,
+            lastName: "Rio Badar"
+        };
+
+        if ("middleName" in mbaCrush) {
+            document.writeln(`hello ${mbaCrush.middleName}`)
+        } else {
+            alert("gausah ngarepp!")
+        }
+
+        const name = ["vannesya", null, "rio badar"];
+        const result = 1 in name;
+        alert(`${result}`)
+
+
+
+    </script>
+</body>
+
+</html>
