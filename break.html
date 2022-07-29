@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break</title>
+</head>
+
+<body>
+    <!-- 
+
+        - pada switch statement, kita mengenal break sebagai kunci untuk menghentikan case dalam switch
+        - sama dengan pada perulangan, break juga digunakan untuk menghentikan seluruh perulangan.
+        - namun berbeda dengan continue, continue digunakan untuk menghentikan perulangan saat ini, lalu menjatuhkan ke perulangan selanjutanya
+
+     -->
+    <script>
+
+        let counter = 1;
+
+        while (true) {
+            document.writeln(`<p> Perulangan ke-${counter} </p>`)
+            counter++;
+
+            if (counter > 10) {
+                break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
