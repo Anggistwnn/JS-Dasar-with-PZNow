@@ -10,9 +10,23 @@
 
 <body>
     <!-- 
-        - merupakan object lain dari for in
+        - Jika for in digunakan untuk melakukan interasi property atau index, berbeda dengan for of, ini digunakan untuk melakukan iterasi terhadap isi value dari iterable object, setiap array, string dan lain-lain
+        - for of tidak bisa digunakan untuk melakukan iterasi data di object, karena object bukanlah iterable.
 
      -->
+
+    <script>
+        // menggunakan object
+        const names = ["Anggi", "Ade Waliya", "Raihani Naimiyah"];
+        for (name of names) {
+            document.writeln(`<pre>${name}</pre>`);
+        }
+        // menggunakan string dan akan menjadi iterator
+        const fullName = "Ade Waliya";
+        for (initialize of fullName) {
+            document.writeln(`<pre>${initialize}</pre>`)
+        }
+    </script>
 </body>
 
 </html>
