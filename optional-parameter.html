@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Parameter</title>
+</head>
+
+<body>
+    <!-- 
+    - secara default, parameter difuntion itu optional 
+    - artinya kita tidak wajib mengisi value nya ketika memanggil funtion
+    - jika tidak ada value yang kita kirim ke parameter ketika memanggil function, maka secara otomatis parameter tsb bernilai undefined
+ -->
+
+    <script>
+        function mhs(firstName, lastName) {
+            console.log(firstName);
+            console.log(lastName);
+        }
+
+        mhs("Anggi", "setiawan");
+    </script>
+    <!-- 
+        - Default Parameter
+        - sekarang kita tahu bahwa parameter itu optional, artinya kita bisa tdk memberikan value terhadp parameter
+        - parameter juga bisa kita beri default value, artinya jika ketika kita tidak mengirim data ke parameter atau kita mengirim data undefined, maka secara otomatis parameter akan diisi oleh default value
+     -->
+</body>
+
+</html>
