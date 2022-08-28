@@ -19,6 +19,23 @@
             This Is My Page
         </h1>
     </div>
+    <!-- Intializing function script -->
+    <script>
+        let body = document.body;
+
+        const darkLimit = 5;
+        let darkCounter = 0;
+
+
+        function darkMode() {
+            darkCounter++;
+            if (darkCounter % 5 == 0) {
+                alert('Please stop click, you in limit clicky');
+            }
+            console.log('darkMode onClick how many times!: ', darkCounter);
+            body.classList.toggle('dark');
+        }
+    </script>
 </body>
 
 </html>
