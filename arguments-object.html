@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument Object</title>
+</head>
+
+<body>
+    <!-- 
+        - sebelum adanya fitur rest parameter, di JS sudah ada fitur yang bernama argument object
+        - ini adalah fitur dimana kita bisa mengambil semua parameter dalam bentuk array dengan mengunakan obj bernama argument
+        - argument secara otomatis bisa digunakan difunction
+        - namun perlu diingat, bahwa untuk javascript saat ini, lebih baik disarankan menggunakan rest parameter
+     -->
+
+
+    <script>
+
+        function oldSum() {
+            let total = 0;
+            for (const argument of arguments) {
+                total += argument;
+            }
+            document.writeln(`<p> Total is ${total} </p> `)
+            // console.log(`Total is ${total}`);
+        }
+
+        oldSum(5, 5, 5, 5, 5);
+
+    </script>
+</body>
+
+</html>

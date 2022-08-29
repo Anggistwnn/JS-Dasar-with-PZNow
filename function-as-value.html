@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function As Value</title>
+</head>
+
+<body>
+    <!-- 
+        - function tdk hanya bs digunakan sebagai kode program yg dieksekusi, tp bs jg sebagai value
+        - which is function bs disimpan di variable, bisa jg dikirim melalui parameter ke function lainnya
+
+     -->
+
+
+    <script>
+
+        function sayHello(name) {
+            document.writeln(`<p> Hello ${name} </p>`)
+        }
+
+        sayHello('Anggi Setiawan');
+
+        const say = sayHello;
+        say("Ade Waliya");
+
+        function sayName(callback) {
+            callback("Ade Waliya dan Anggi");
+        }
+
+        sayName(sayHello);
+
+    </script>
+</body>
+
+</html>
