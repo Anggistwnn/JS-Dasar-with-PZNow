@@ -26,13 +26,16 @@
         const darkLimit = 5;
         let darkCounter = 0;
 
-
         function darkMode() {
-            darkCounter++;
-            if (darkCounter % 5 == 0) {
-                alert('Please stop click, you in limit clicky');
+            if (darkLimit == darkCounter) {
+                alert('I am sorry request not run!');
+                return;
             }
-            console.log('darkMode onClick how many times!: ', darkCounter);
+            darkCounter++;
+            let darkRemainingLeft = darkLimit - darkCounter;
+
+            console.log('Your change to dark mode is : ', darkCounter);
+            console.log('darkMode onClick how many times!: ', darkRemainingLeft);
             body.classList.toggle('dark');
         }
     </script>

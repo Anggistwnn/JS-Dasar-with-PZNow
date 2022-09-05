@@ -15,8 +15,23 @@
 
      -->
 
+    <header>
+        <h1>JavaScript DOM</h1>
+    </header>
+
+    <main>
+        <input type="text">
+        <button onclick="addInputTag()">Showing h1 Tag at Paragraph</button> <br>
+        <strong></strong>
+    </main>
 
     <script>
+
+        function addInputTag() {
+            const valueInput = document.getElementsByTagName('input')[0].value;
+
+            document.getElementsByTagName('strong')[0].innerHTML = valueInput;
+        }
 
         // function sayHello(name) {
         //     document.writeln(`<p> Hello ${name} </p>`)
@@ -85,16 +100,44 @@
         //     alert("Jangan menyerah coba lagi");
         // }
 
-        function ganjilGenap(platNomor) {
-            // Tulis kode kalian di dalam fungsi ini
-            if (platNomor % 2 != 0) {
-                return 'Ganjil';
-            } else {
-                return 'Genap';
-            };
-        }
+        // function ganjilGenap(platNomor) {
+        //     // Tulis kode kalian di dalam fungsi ini
+        //     if (platNomor % 2 != 0) {
+        //         return 'Ganjil';
+        //     } else {
+        //         return 'Genap';
+        //     };
+        // }
 
-        console.log(ganjilGenap(6));
+        // console.log(ganjilGenap(6));
+
+        // var angka = prompt('Masukan Angka: ');
+        // if (angka % 2 == 0) {
+        //     alert(angka + " Ini adalah bilangan Genap")
+        // } else {
+        //     alert(angka + " Ini adalah bilangan Ganjil")
+        // };
+        // let angka = [];
+
+        // let i = 5;
+        // while (i >= 0) {
+        //     angka.push(i);
+        //     console.log(angka);
+        //     i--;
+        // }
+
+        // let angka = [];
+        // let i = 5;
+
+        // // Ubah kode loop di bawah ini
+        // do {
+        //     console.log(i)
+        //     angka.push(i);
+        //     i++;
+        // }
+        // while (i < 11) {
+        // }
+
 
     </script>
 </body>
