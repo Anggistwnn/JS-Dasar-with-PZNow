@@ -20,18 +20,67 @@
     </header>
 
     <main>
-        <input type="text">
-        <button onclick="addInputTag()">Showing h1 Tag at Paragraph</button> <br>
+
+        <button onclick="namaJenisAnjing()">Showing text you want</button> <br>
         <strong></strong>
     </main>
 
     <script>
 
-        function addInputTag() {
-            const valueInput = document.getElementsByTagName('input')[0].value;
+        // const menghitungHuruf = () => {
+        //     document.writeln(huruf1, huruf2, huruf3);
+        // }
 
-            document.getElementsByTagName('strong')[0].innerHTML = valueInput;
-        }
+        // menghitungHuruf("a", "b", "c");
+
+        let arrayAsli = [1, 2, 3, 4, 5, 6, 7];
+
+        let arrayDuplikat = arrayAsli;
+
+        console.log(arrayDuplikat);
+        // const namaJenisAnjing = () => {
+        //     const anjing = ["Pug", "Bulldog", "Poodle"];
+        //     return anjing[Math.floor(Math.random() * (anjing.length))];
+
+        // }
+        // console.log(namaJenisAnjing());
+
+        // const menghitungJumlahParameter = (...parameters) => {
+        //     console.log(parameters);
+        //     document.writeln(`memiliki ${parameters.length} parameter`)
+        // }
+
+        // menghitungJumlahParameter(121, 2, 1);
+
+        // const number = [1, 2, 3, 4];
+
+        // console.log(...number)
+
+        // const mhsBaru = {
+        //     nama: "Rini",
+        //     Pekerjaan: "Karyawan Swasta",
+        //     umur: 21
+        // }
+
+        // const { nama, ...mengambiValue } = mhsBaru
+
+        // console.log(mengambiValue);
+
+        // const jeneng = "Anggi";
+
+        // console.log([...jeneng])
+
+        // let newVariable = () => {
+        //     const valueInput = document.getElementsByTagName('input')[0].value;
+
+        //     document.getElementsByTagName('strong')[0].innerHTML = valueInput;
+        // }
+
+        // let penambahanAngka = (angkaPertama, angkaKedua) => {
+        //     document.writeln(angkaPertama + angkaKedua)
+        // }
+
+        // penambahanAngka(1, 19);
 
         // function sayHello(name) {
         //     document.writeln(`<p> Hello ${name} </p>`)
@@ -48,13 +97,14 @@
 
         // sayName(sayHello);
 
-        // let bilangan1 = 15;
-        // let bilangan2     = 4;
+        // function myAge() {
+        //     return 11
+        // }
 
-        // console.log(bilangan1 % bilangan2);
+        // let kalimat = (`sekarang saya berusia ${myAge()} tahun, dan 2 tahun lagi saya berusia ${myAge()}, saya ${myAge() >= 17 ? 'sudah dewasa' : 'belum dewasa'}`);
 
-        // let bilangan1 = 10;
-        // let bilangan2 = 3;
+        // console.log(kalimat);
+
 
         // console.log(bilangan1 ** bilangan2);
         // console.log(bilangan1 % bilangan2);
