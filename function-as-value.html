@@ -27,17 +27,56 @@
 
     <script>
 
-        // const menghitungHuruf = () => {
-        //     document.writeln(huruf1, huruf2, huruf3);
-        // }
+        // let manUtdPlayer = ["Lisandro Martinez", "Raphael Varane", "Diogo Dalot"]
 
-        // menghitungHuruf("a", "b", "c");
+        // let [player1, , player3] = manUtdPlayer;
 
-        let arrayAsli = [1, 2, 3, 4, 5, 6, 7];
+        // console.log(player1);
+        // console.log(player3);
 
-        let arrayDuplikat = arrayAsli;
+        // let spreadData = "Anggi";
 
-        console.log(arrayDuplikat);
+        // let [a, b, c, d, e] = spreadData;
+
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+        // console.log(d);
+        // console.log(e);
+
+        // let dataMhs = {
+        //     name: "Anggi Setiawan",
+        //     age: 24,
+        //     address: "Tangerang Selatan",
+        //     fileList: ['skripsi', 'karya ilmiyah', 'jurnal']
+        // };
+
+        // let getData = { name, age, address, fileList: [firstFile, secondFile, lastFile] } = dataMhs;
+
+        // console.log(name);
+        // console.log(age);
+        // console.log(address);
+        // console.log(firstFile);
+        // console.log(secondFile);
+        // console.log(lastFile);
+
+        // let codingTech = ['react JS', 'node JS', 'express JS', 'Angular'];
+
+        // codingTech.forEach(data => {
+        //     console.log(data);
+        // });
+
+        let techGov = ['tangselTech', 'kominfo', 'TelkomselSigma', 'idnValey'];
+
+
+        techGov.forEach((data, id) => {
+            if (id % 2 === 0) {
+                console.log(data, id)
+            } else {
+                console.log('not allowed', id)
+            }
+        });
+
         // const namaJenisAnjing = () => {
         //     const anjing = ["Pug", "Bulldog", "Poodle"];
         //     return anjing[Math.floor(Math.random() * (anjing.length))];
